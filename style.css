@@ -132,6 +132,11 @@ a.pure-button-primary {
     opacity: 0.8;
 }
 
+.searchbtn {
+    border-style: solid;
+    border-color: white;
+}
+
 .content-wrapper {
 
     position: absolute;
