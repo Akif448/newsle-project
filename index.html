@@ -33,8 +33,8 @@
             </p>
             <p>
             <form class="pure-form">
-                <input type="text" class="pure-input-rounded" />
-                <button type="submit" class="pure-button">Search</button>
+                <input type="text" class="pure-input-rounded"id ="search-term" />
+                <button type="submit" class="pure-button" id ="run-search">Search</button>
             </form>
             </p>
             <br>
@@ -49,11 +49,10 @@
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
                 <label for="multi-state">News Source: </label>
-                <select id="multi-state" class="pure-input-1-2">
-                    <option>Source</option>
-                    <option>The guardian</option>
-                    <option>NY Times</option>
-                    <option>Other</option>
+                <select id="multi-state" class="pure-input-1-2" id ="dropdownNews">
+                    <option disabled hidden selected>The Gardian</option>
+                    <option value ="Gardian" >The Gardian</option>
+                    <option value ="NYtimes" >The New York Times</option>
                 </select>
             </div>
         </div>
@@ -82,7 +81,13 @@
         Created for monash Bootcamp.
     </div>
     </div>
+    <!-- jQuery JS -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+ <!-- Code to the JavaScript File -->
+ <script src="script.js"></script>
+
 
 </body>
-
+ 
 </html>
