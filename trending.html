@@ -30,6 +30,39 @@
 
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $.ajax({
+            url: "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=vLMHBGsKFQFda3lJ74OVq3S1X79VNu4T",
+            method: "GET"
+        }).then(function (response) {
+            // console.log(response);
+            // console.log(response.results);
+            // console.log(response.results[0]);
+            // console.log(response.results[0].title);
+            // console.log(response.results[0].abstract);
+            // console.log(response.results[0].multimedia[0].url);
+            for (let i = 0; i <= 8; i++) {
+                console.log(i);
+                var featuredStory = response.results[i];
+                console.log(featuredStory);
+                var storyTitle = response.results[i].title;
+                console.log(storyTitle);
+                var storyAbstract = response.results[i].abstract;
+                console.log(storyAbstract);
+                var storyPictureURL = response.results[i].multimedia[0].url
+                console.log(storyPictureURL);
+                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img src=' + storyPictureURL + '></div></div>');
+                console.log($storyHTML);
+                function addTrendingStory() {
+                    $('#article-section').append($storyHTML);
+                };
+                addTrendingStory();
+            }
+        });
+    </script>
 </body>
 
 </html>
