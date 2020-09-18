@@ -201,7 +201,16 @@ a.pure-button-primary {
         border: none;
     }
 
+    #newsSource {
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        color:#0077ff8e;
+    }
+       
+
 }
+   
 
 @media (min-width: 78em) {
  

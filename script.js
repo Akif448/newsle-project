@@ -2,7 +2,14 @@ $(document).ready (function(){
   
     $("#run-search").on("click",function(e){
       e.preventDefault();
-      var selection =$("#dropdownNews").val()
+      //get the selected new source
+      var selection =$('#dropdownNews :selected').val();
+      //append the selected new source header
+      $("#newsSource").empty();
+      $("#newsSource").html($('#dropdownNews :selected').text());
+      // clear the previous contents displayed
+      clear();
+      // get the result 
       if (selection ==="Gardian") {
       
       function buildQueryURL1() {
@@ -179,6 +186,11 @@ $(document).ready (function(){
   
   
     });
+    
+// Function to empty out the articles
+function clear() {
+  $("#article-section").empty();
+}
    
     });
   
