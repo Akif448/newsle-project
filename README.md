@@ -9,7 +9,7 @@ Newsle project
 
 ## User Story
 _As a user I want to save time by searching for news that I am interested in
-I am looking for application that can filter news based on my interest from multiple sources
+I am looking for web application that can filter news based on my interest from multiple sources
 After search I like to see news based on my criteria of interest from multiple souces for credibility_
 
 
@@ -19,6 +19,8 @@ Newsle is a website platform where users can search for news topics that they ar
 search bar on the main page and filtering options based on year and the news source allows users to get to their favourite news topic quickly
 there is also a trending page which outlines the trending news of the day
 users can also select the news based on the trending topics.
+
+![Website logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/front%20page.png)
 
 
 ## News Sources
