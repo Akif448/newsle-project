@@ -32,12 +32,12 @@ users can also select the news based on the trending topics.
 
 ## contents
 The project is composed of 6 files:
-**index.html
-**results.html
-**trending.html
-**style.css
-**script.js
-**readme.md
+* index.html
+* results.html
+* trending.html
+* style.css
+* script.js
+* readme.md
 
-**
+
 
