@@ -31,8 +31,8 @@ users can also select the news based on the trending topics.
 
 ## Apis Used 
 
-* [Guardian API](https://open-platform.theguardian.com/"Guardian Api")
-* [NewYork Times](https://developer.nytimes.com/"NewYork Times Api")
+* [The Guardian API](https://open-platform.theguardian.com/ "The Guardian Api")
+* [NewYork Times](https://developer.nytimes.com/ "NewYork Times Api")
 
 ## contents
 The project is composed of 6 files:
