@@ -2,15 +2,14 @@
 Newsle project
 
 ## Project team membrs
-*Akif  *Avvi  *Sunda  *Rakesh
 
 ## News Sources
 Guardian & Newyork Times.
 
 ## User Story
-As a user, I want to save time by searching for news that I am interested in.
-I am looking for application that can filter news based on my interest from multiple sources.
-After search I like to see news based on my criteria of interest from multiple souces for credibility.
+_As a user I want to save time by searching for news that I am interested in
+I am looking for application that can filter news based on my interest from multiple sources
+After search I like to see news based on my criteria of interest from multiple souces for credibility_
 
 ## project description 7 skeleton
 
