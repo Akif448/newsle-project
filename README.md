@@ -2,6 +2,10 @@
 Newsle project
 
 ## Project team membrs
+* Akif
+* Sunda
+* Avvi
+* Rakesh
 
 ## News Sources
 Guardian & Newyork Times.
@@ -23,8 +27,8 @@ users can also select the news based on the trending topics.
 
 ## Apis Used 
 
-https://open-platform.theguardian.com/
-https://developer.nytimes.com/
+* [Guardian API](https://open-platform.theguardian.com/"Guardian Api")
+* [NewYork Times](https://developer.nytimes.com/"NewYork Times Api")
 
 ## contents
 The project is composed of 6 files:
