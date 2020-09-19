@@ -35,9 +35,9 @@ $(document).ready (function(){
       
         // If the user provides a startYear, include it in the queryParams object
         var startYear = $("#start-year").val()
-       
+      
         if (parseInt(startYear)) {
-          queryParams.from_date = startYear + "0101";
+          queryParams["from-date"] = startYear + "0101";
         }
         
         // Logging the URL so we have access to it for troubleshooting
@@ -75,11 +75,12 @@ $(document).ready (function(){
             //append the output with the result
               output +=`
 
-              <div class="w3-card-4" style="width:100%;">
+
+              <div class="w3-card-4 " style="width:270%;">
               <header class="w3-container w3-blue">
-                <h4>Title : ${latestNews[i].webTitle}</h4>
+              <h4>Title : ${latestNews[i].webTitle}</h4>
               </header>
-          
+
               <div class="w3-container">
               <p>News Type: ${latestNews[i].type}</p>
               <p>Section: ${latestNews[i].sectionName}</p>
@@ -87,7 +88,11 @@ $(document).ready (function(){
               <p>Published on: ${latestNews[i].webPublicationDate}</p>
               <p>Pillar Name: ${latestNews[i].pillarName}</p>
               </div>
-                          
+
+              <footer class="w3-container w3-grey" style ="height:10px">
+              </footer>
+              </div>
+              
               
               `;
     
@@ -168,11 +173,12 @@ $(document).ready (function(){
               //append the output with the result
                 output +=`
                 
-                <div class="w3-card-4" style="width:100%;">
-                <header class="w3-container w3-blue" >
-                  <h4>Title : ${latestNews[i].abstract}</h4>
+
+                <div class="w3-card-4" style="width:270%;">
+                <header class="w3-container w3-blue">
+                <h4>Title : ${latestNews[i].abstract}</h4>
                 </header>
-            
+  
                 <div class="w3-container">
                 <p>News Type: ${latestNews[i].document_type}</p>
                 <p>Section: ${latestNews[i].section_name}</p>
@@ -180,6 +186,11 @@ $(document).ready (function(){
                 <p>Published on: ${latestNews[i].pub_date}</p>
                 <p>Pillar Name: ${latestNews[i].type_of_material}</p>
                 </div>
+  
+                <footer class="w3-container w3-grey" style ="height:10px">
+                </footer>
+                </div>
+                
                                                               
                 `;
       
