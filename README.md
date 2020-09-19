@@ -10,6 +10,9 @@ Newsle project
 ## News Sources
 Guardian & Newyork Times.
 
+![Guardian Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_Guardian_logo.png)<br>
+![New York Times Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_New_York_Times_logo.png)
+
 ## User Story
 _As a user I want to save time by searching for news that I am interested in
 I am looking for application that can filter news based on my interest from multiple sources
