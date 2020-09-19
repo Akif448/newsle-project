@@ -6,7 +6,16 @@ $(document).ready (function(){
       var selection =$('#dropdownNews :selected').val();
       //append the selected new source header
       $("#newsSource").empty();
-      $("#newsSource").html($('#dropdownNews :selected').text());
+
+      var img = document.createElement("img");
+      if (selection==="Gardian"){
+        img.src = " The_Guardian_logo.png";
+      } else {
+        img.src = "The_New_York_Times_logo.png";
+      }
+      var src = document.getElementById("newsSource");
+      src.appendChild(img);
+      //$("#newsSource").html($('#dropdownNews :selected').text());
       // clear the previous contents displayed
       clear();
       // get the result 
@@ -26,9 +35,9 @@ $(document).ready (function(){
       
         // If the user provides a startYear, include it in the queryParams object
         var startYear = $("#start-year").val()
-      
+       
         if (parseInt(startYear)) {
-          queryParams.webPublicationDate = startYear + "0101";
+          queryParams.from_date = startYear + "0101";
         }
         
         // Logging the URL so we have access to it for troubleshooting
@@ -65,13 +74,20 @@ $(document).ready (function(){
             for (var i in latestNews){
             //append the output with the result
               output +=`
-              
-              <h4> Title : ${latestNews[i].webTitle}</h4>
+
+              <div class="w3-card-4" style="width:100%;">
+              <header class="w3-container w3-blue">
+                <h4>Title : ${latestNews[i].webTitle}</h4>
+              </header>
+          
+              <div class="w3-container">
               <p>News Type: ${latestNews[i].type}</p>
               <p>Section: ${latestNews[i].sectionName}</p>
               <p><strong>URL: </strong> <a href="${latestNews[i].webUrl}">${latestNews[i].webUrl}</a></p>
               <p>Published on: ${latestNews[i].webPublicationDate}</p>
               <p>Pillar Name: ${latestNews[i].pillarName}</p>
+              </div>
+                          
               
               `;
     
@@ -152,13 +168,19 @@ $(document).ready (function(){
               //append the output with the result
                 output +=`
                 
-                <h4> Title : ${latestNews[i].abstract}</h4>
+                <div class="w3-card-4" style="width:100%;">
+                <header class="w3-container w3-blue" >
+                  <h4>Title : ${latestNews[i].abstract}</h4>
+                </header>
+            
+                <div class="w3-container">
                 <p>News Type: ${latestNews[i].document_type}</p>
                 <p>Section: ${latestNews[i].section_name}</p>
                 <p><strong>URL: </strong> <a href="${latestNews[i].web_url}">${latestNews[i].web_url}</a></p>
                 <p>Published on: ${latestNews[i].pub_date}</p>
                 <p>Pillar Name: ${latestNews[i].type_of_material}</p>
-                
+                </div>
+                                                              
                 `;
       
                 }
