@@ -8,9 +8,9 @@ Newsle project
 * Rakesh
 
 ## News Sources
-Guardian & Newyork Times.
-
+* ### The Guardian 
 ![Guardian Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_Guardian_logo.png)<br>
+* ### Newyork Times.
 ![New York Times Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_New_York_Times_logo.png)
 
 ## User Story
