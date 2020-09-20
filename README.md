@@ -27,7 +27,7 @@ users can also select the news based on the trending topics.
 * ### The Guardian articles loading page 
 ![The Guardian articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/Guardian%20-Articles.png)
 
-* ### The Guardian articles loading page
+* ### New York Times articles loading page
 ![New York Times articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/NYTimes%20Articles.png)
 
 ## News Sources
