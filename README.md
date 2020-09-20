@@ -10,7 +10,7 @@ Newsle project
 ## User Story
 _As a user I want to save time by searching for news that I am interested in.
 I am looking for web application that can filter news based on my interest from multiple sources.
-After search I like to see the news based on my criteria of interest from multiple souces for credibility. _
+After search I like to see the news based on my criteria of interest from multiple souces for credibility._
 
 
 ## Project description
