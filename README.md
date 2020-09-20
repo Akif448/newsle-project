@@ -16,9 +16,8 @@ After search I like to see the news based on my criteria of interest from multip
 ## Project description
 
 Newsle is a website platform where users can search for news topics that they are interested in.
-search bar on the main page and filtering options based on year and the news source allows users to get to their favourite news topic quickly
-there is also a trending page which outlines the trending news of the day
-users can also select the news based on the trending topics.
+Search bar on the main page and filtering options based on year and the news source allows users to get to their favourite news topic quickly.
+Trending page also helps users to visually access their favourite news quickly based on the trending topics.
 
 ## Project outlook
 * ### Website Logo 
