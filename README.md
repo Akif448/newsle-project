@@ -21,9 +21,13 @@ there is also a trending page which outlines the trending news of the day
 users can also select the news based on the trending topics.
 
 ## Project outlook
-
+* ### Website Logo 
 ![Website logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/front%20page.png)
+
+* ### The Guardian articles loading page 
 ![The Guardian articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/Guardian%20-Articles.png)
+
+* ### The Guardian articles loading page
 ![New York Times articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/NYTimes%20Articles.png)
 
 ## News Sources
