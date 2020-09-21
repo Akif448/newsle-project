@@ -175,6 +175,18 @@ a.pure-button-primary {
     color: #aaa;
 }
 
+.trendingart {
+    text-align: center;
+    width: auto;
+    padding-top: 5em;
+    font-weight: bold;
+}
+
+.imgt {
+    width: 70%;
+    height: 35em;
+}
+
 
 
 @media (min-width: 48em) {

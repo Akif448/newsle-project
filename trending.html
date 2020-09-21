@@ -25,7 +25,7 @@
     </div>
 
     <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-md-2-5" id="article-section">
+        <div class="l-box-lrg pure-u-1-2 pure-u-md-2-5 trendingart" id="article-section">
             <!--place retrieved articles in here-->
 
         </div>
@@ -54,7 +54,7 @@
                 console.log(storyAbstract);
                 var storyPictureURL = response.results[i].multimedia[0].url
                 console.log(storyPictureURL);
-                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img src=' + storyPictureURL + '></div></div>');
+                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="imgt" src=' + storyPictureURL + '></div></div><br>');
                 console.log($storyHTML);
                 function addTrendingStory() {
                     $('#article-section').append($storyHTML);
