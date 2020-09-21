@@ -1,7 +1,7 @@
 # Project Title
 Newsle project
 
-## Project team membrs
+## Project team members
 * Akif
 * Sunda
 * Avvi
