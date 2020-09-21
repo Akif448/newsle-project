@@ -1,7 +1,7 @@
 # Project Title
 Newsle project
 
-## Project team membrs
+## Project team members
 * Akif
 * Sunda
 * Avvi
@@ -55,7 +55,6 @@ Trending page also helps users to visually access their favourite news based on 
 ## contents
 The project is composed of 6 files:
 * index.html
-* results.html
 * trending.html
 * style.css
 * script.js
