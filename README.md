@@ -44,6 +44,15 @@ Trending page also helps users to visually access their favourite news based on 
 * [The Guardian API](https://open-platform.theguardian.com/ "The Guardian Api")
 * [NewYork Times](https://developer.nytimes.com/ "NewYork Times Api")
 
+## Technologies Used
+
+* HTML5
+* CSS3
+* Bootstrap 4
+* JavaScript
+* jQuery
+* APIs
+
 ## contents
 The project is composed of 6 files:
 * index.html
