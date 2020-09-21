@@ -209,8 +209,24 @@ a.pure-button-primary {
         text-align: center;
         color:#0077ff8e;
     }
-       
+    a:link {
+    color: red;
+    }
 
+    /* visited link */
+    a:visited {
+    color: green;
+    }
+
+    /* mouse over link */
+    a:hover {
+    color: orangered;
+    }
+
+    /* selected link */
+    a:active {
+    color: blue;
+    }
 }
    
 @media (min-width: 78em) {

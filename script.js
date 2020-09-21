@@ -2,11 +2,14 @@ $(document).ready (function(){
   
     $("#run-search").on("click",function(e){
       e.preventDefault();
-      //get the selected new source
+
+      //get the selected news source
       var selection =$('#dropdownNews :selected').val();
-      //append the selected new source header
+
+      //clear the news source images 
       $("#newsSource").empty();
 
+      //get the image for the selected news source
       var img = document.createElement("img");
       if (selection==="Gardian"){
         img.src = " The_Guardian_logo.png";
@@ -15,9 +18,10 @@ $(document).ready (function(){
       }
       var src = document.getElementById("newsSource");
       src.appendChild(img);
-      //$("#newsSource").html($('#dropdownNews :selected').text());
+
       // clear the previous contents displayed
       clear();
+      
       // get the result 
       if (selection ==="Gardian") {
       
@@ -27,21 +31,21 @@ $(document).ready (function(){
       
         // Begin building an object to contain our API call's query parameters
         // Set the API key
-        var queryParams = { "api-key": "test" };
+        var queryParams = { 
+            "api-key": "test" };
       
         // Grab text the user typed into the search input, add to the queryParams object
-        queryParams.q = $("#search-term").val();
+        queryParams.q = $("#search-term").val().trim();
         console.log (queryParams.q);
       
         // If the user provides a startYear, include it in the queryParams object
         var startYear = $("#start-year").val()
-      
-        if (parseInt(startYear)) {
-          queryParams["from-date"] = startYear + "0101";
-        }
         
-        // Logging the URL so we have access to it for troubleshooting
-        
+      //  if (parseInt(startYear)) {
+         // queryParams["from-date"] = startYear + "0101";
+      //  }
+ 
+                
         return queryURL + $.param(queryParams);
       }
       var queryURL=buildQueryURL1()
@@ -84,7 +88,7 @@ $(document).ready (function(){
               <div class="w3-container">
               <p>News Type: ${latestNews[i].type}</p>
               <p>Section: ${latestNews[i].sectionName}</p>
-              <p><strong>URL: </strong> <a href="${latestNews[i].webUrl}">${latestNews[i].webUrl}</a></p>
+              <p><strong>URL: </strong> <a href="${latestNews[i].webUrl}"target="_blank">${latestNews[i].webUrl}</a></p>
               <p>Published on: ${latestNews[i].webPublicationDate}</p>
               <p>Pillar Name: ${latestNews[i].pillarName}</p>
               </div>
@@ -128,7 +132,7 @@ $(document).ready (function(){
           var queryParams = { "api-key": "R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M" };
         
           // Grab text the user typed into the search input, add to the queryParams object
-          queryParams.q = $("#search-term").val();
+          queryParams.q = $("#search-term").val().trim();;
           console.log (queryParams.q);
         
           // If the user provides a startYear, include it in the queryParams object
@@ -137,9 +141,7 @@ $(document).ready (function(){
           if (parseInt(startYear)) {
             queryParams.begin_date  = startYear + "0101";
           }
-          
-          // Logging the URL so we have access to it for troubleshooting
-          
+                             
           return queryURL + $.param(queryParams);
         }
         var queryURL=buildQueryURL()
@@ -182,7 +184,7 @@ $(document).ready (function(){
                 <div class="w3-container">
                 <p>News Type: ${latestNews[i].document_type}</p>
                 <p>Section: ${latestNews[i].section_name}</p>
-                <p><strong>URL: </strong> <a href="${latestNews[i].web_url}">${latestNews[i].web_url}</a></p>
+                <p><strong>URL: </strong> <a href="${latestNews[i].web_url}""target="_blank">${latestNews[i].web_url}</a></p>
                 <p>Published on: ${latestNews[i].pub_date}</p>
                 <p>Pillar Name: ${latestNews[i].type_of_material}</p>
                 </div>
