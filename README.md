@@ -21,7 +21,7 @@ Trending page also helps users to visually access their favourite news based on 
 
 ## Project outlook
 * ### Website Logo 
-![Website logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/front%20page.png)
+![Website logo](https://github.com/Akif448/newsle-project/blob/master/assets/main_page_logo.PNG)
 
 * ### The Guardian articles loading page 
 ![The Guardian articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/Guardian%20-Articles.png)
