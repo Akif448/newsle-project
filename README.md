@@ -48,7 +48,7 @@ Trending page also helps users to visually access their favourite news based on 
 
 * HTML5
 * CSS3
-* Bootstrap 4
+* Pure CSS
 * JavaScript
 * jQuery
 * APIs
