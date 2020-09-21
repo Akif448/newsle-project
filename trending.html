@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Newsle</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading">Your Newsle</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Trending</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pure-g">
+        <div class="l-box-lrg pure-u-1-2 pure-u-md-2-5 trendingart" id="article-section">
+            <!--place retrieved articles in here-->
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $.ajax({
+            url: "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=vLMHBGsKFQFda3lJ74OVq3S1X79VNu4T",
+            method: "GET"
+        }).then(function (response) {
+            // console.log(response);
+            // console.log(response.results);
+            // console.log(response.results[0]);
+            // console.log(response.results[0].title);
+            // console.log(response.results[0].abstract);
+            // console.log(response.results[0].multimedia[0].url);
+            for (let i = 0; i <= 8; i++) {
+                console.log(i);
+                var featuredStory = response.results[i];
+                console.log(featuredStory);
+                var storyTitle = response.results[i].title;
+                console.log(storyTitle);
+                var storyAbstract = response.results[i].abstract;
+                console.log(storyAbstract);
+                var storyPictureURL = response.results[i].multimedia[0].url
+                console.log(storyPictureURL);
+                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="imgt" src=' + storyPictureURL + '></div></div><br>');
+                console.log($storyHTML);
+                function addTrendingStory() {
+                    $('#article-section').append($storyHTML);
+                };
+                addTrendingStory();
+            }
+        });
+    </script>
+</body>
+
+</html>
