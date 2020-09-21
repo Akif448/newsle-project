@@ -23,21 +23,20 @@ Trending page also helps users to visually access their favourite news based on 
 * ### Website Logo 
 ![Website logo](https://github.com/Akif448/newsle-project/blob/master/assets/main_page_logo.PNG)
 
-* ### The Guardian articles loading page 
-![The Guardian articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/Guardian%20-Articles.png)
+* ### The Guardian articles results page 
+![The Guardian articles loading page](https://github.com/Akif448/newsle-project/blob/master/assets/the_guardian_result.PNG)
 
-* ### New York Times articles loading page
-![New York Times articles loading page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/NYTimes%20Articles.png)
+* ### New York Times articles results page
+![New York Times articles loading page](https://github.com/Akif448/newsle-project/blob/master/assets/the_newyorktimes_results.PNG)
 
 * ### Trending Page
-![Trending page](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/trending.png)
-
+![Trending page](https://github.com/Akif448/newsle-project/blob/master/assets/trending_new.PNG)
 
 ## News Sources
 
-![Guardian Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_Guardian_logo.png)<br>
+![Guardian Logo](https://github.com/Akif448/newsle-project/blob/master/assets/The_Guardian_logo.png)<br>
 
-![New York Times Logo](https://github.com/Akif448/newsle-project/blob/add-styling_html-elements/The_New_York_Times_logo.png)
+![New York Times Logo](https://github.com/Akif448/newsle-project/blob/master/assets/The_New_York_Times_logo.png)
 
 ## Apis Used 
 
