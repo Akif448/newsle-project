@@ -20,7 +20,7 @@ Search bar allows users to input their interested topics along with preferred ye
 Trending page also allows users to visually access the top hourly trending news.
 
 ## Project outlook
-* ### Website Logo 
+* ### Website Main Page 
 ![Website logo](https://github.com/Akif448/newsle-project/blob/master/assets/main_page_logo.PNG)
 
 * ### The Guardian articles results page 
