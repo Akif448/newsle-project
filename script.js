@@ -40,10 +40,10 @@ $(document).ready (function(){
       
         // If the user provides a startYear, include it in the queryParams object
         var startYear = $("#start-year").val()
-        
-      //  if (parseInt(startYear)) {
-         // queryParams["from-date"] = startYear + "0101";
-      //  }
+        // it does not work due to the free vesion of API
+        if (parseInt(startYear)) {
+        // queryParams["from-date"] = startYear + "0101";
+        }
  
                 
         return queryURL + $.param(queryParams);

@@ -226,10 +226,7 @@ a.pure-button-primary {
     }
 
     /* visited link */
-    a:visited {
-    color: green;
-    }
-
+    
     /* mouse over link */
     a:hover {
     color: orangered;
