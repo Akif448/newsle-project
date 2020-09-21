@@ -140,9 +140,13 @@ $(document).ready(function () {
         var startYear = $("#start-year").val()
 
         if (parseInt(startYear)) {
-          queryParams.begin_date = startYear + "0101";
+          queryParams.begin_date = startYear +"0101"
         }
-
+        
+        if (parseInt(startYear)) {
+          queryParams.end_date = startYear +"1231"
+        }
+        console.log(startYear + "0101");
         return queryURL + $.param(queryParams);
       }
       var queryURL = buildQueryURL()
