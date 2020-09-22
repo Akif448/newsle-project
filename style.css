@@ -222,11 +222,10 @@ a.pure-button-primary {
         text-align: center;
         color:#0077ff8e;
     }
+
     a:link {
     color: #6FBEF3;
     }
-
-    /* visited link */
     
     /* mouse over link */
     a:hover {
@@ -245,3 +244,41 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
+
+@media (max-width: 47.9em) {
+    .imgt {
+        height: 75%;
+        width: 75%;
+    }
+
+    .resultsdiv {
+        width: 25%;
+        height: 25%;
+    }
+
+    .resultscards {
+        width: 50%;
+        height: 50%;
+    }
+
+    #newsSource {
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        color:#0077ff8e;
+    }
+
+    a:link {
+    color: #6FBEF3;
+    }
+
+    a:hover {
+        color: orangered;
+        }
+    
+        /* selected link */
+        a:active {
+        color: #0077ff8e;
+        }
+}
+

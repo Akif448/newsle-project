@@ -140,11 +140,11 @@ $(document).ready(function () {
         var startYear = $("#start-year").val()
 
         if (parseInt(startYear)) {
-          queryParams.begin_date = startYear +"0101"
+          queryParams.begin_date = startYear + "0101"
         }
-        
+
         if (parseInt(startYear)) {
-          queryParams.end_date = startYear +"1231"
+          queryParams.end_date = startYear + "1231"
         }
         console.log(startYear + "0101");
         return queryURL + $.param(queryParams);
@@ -181,12 +181,12 @@ $(document).ready(function () {
               output += `
                 
 
-                <div class="w3-card-4" style="width:270%;">
+                <div class="w3-card-4 resultsdiv" style="width:270%;">
                 <header class="w3-container w3-blue">
                 <h4>Title : ${latestNews[i].abstract}</h4>
                 </header>
   
-                <div class="w3-container">
+                <div class="w3-container resultscards">
                 <p>News Type: ${latestNews[i].document_type}</p>
                 <p>Section: ${latestNews[i].section_name}</p>
                 <p><strong>URL: </strong> <a href="${latestNews[i].web_url}""target="_blank">${latestNews[i].web_url}</a></p>

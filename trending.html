@@ -54,7 +54,7 @@
                 console.log(storyAbstract);
                 var storyPictureURL = response.results[i].multimedia[0].url
                 console.log(storyPictureURL);
-                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="imgt" src=' + storyPictureURL + '></div></div><br>');
+                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="pure-u-img imgt" src=' + storyPictureURL + '></div></div><br>');
                 console.log($storyHTML);
                 function addTrendingStory() {
                     $('#article-section').append($storyHTML);
