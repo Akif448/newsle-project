@@ -11,12 +11,13 @@ $(document).ready(function () {
 
     //get the image for the selected news source
     var img = document.createElement("img");
-    if (selection === "Gardian") {
-      img.src = " assets/The_Guardian_logo.png";
-    } else {
-      img.src = " assets/The_New_York_Times_logo.png";
-    }
-    var src = document.getElementById("newsSource");
+    
+   (selection === "Guardian")? img.src = " assets/The_Guardian_logo.png" : img.src =  " assets/The_New_York_Times_logo.png";
+    
+
+   var src = document.getElementById("newsSource");
+
+    //append image
     src.appendChild(img);
 
     // clear the previous contents displayed
@@ -37,8 +38,7 @@ $(document).ready(function () {
 
         // Grab text the user typed into the search input, add to the queryParams object
         queryParams.q = $("#search-term").val().trim();
-        console.log(queryParams.q);
-
+      
         // If the user provides a startYear, include it in the queryParams object
         var startYear = $("#start-year").val()
         // it does not work due to the free vesion of API
@@ -46,13 +46,10 @@ $(document).ready(function () {
           // queryParams["from-date"] = startYear + "0101";
         }
 
-
         return queryURL + $.param(queryParams);
       }
       var queryURL = buildQueryURL1()
-      console.log(queryURL)
-
-
+     
       // if the search value is not empty then pass the url to get the data
       if (queryURL) {
 
@@ -62,14 +59,7 @@ $(document).ready(function () {
           method: "GET",
           dataType: "json",
 
-          beforsend: function () {
-            //any condition to be checked before sending
-          },
-          complete: function () {
-            // any condition to checked after this completed
-          },
-
-          //when it is successfull 
+         //when it is successfull 
           success: function (news) {
             //let the output to be empty at inital state
             let output = ""
@@ -79,8 +69,6 @@ $(document).ready(function () {
             for (var i in latestNews) {
               //append the output with the result
               output += `
-
-
               <div class="w3-card-4" style="width 270%;">
               <header class="w3-container  w3-blue">
               <h4>Title : ${latestNews[i].webTitle}</h4>
@@ -97,13 +85,13 @@ $(document).ready(function () {
               <footer class="w3-container w3-grey" style ="height:10px">
               </footer>
               </div>
-              
-              
+
               `;
 
             }
+
             //if the output is not empty
-            if (output !== "") {
+            if (output) {
               // append the  article section (id) in html with the result         
               $("#article-section").append(output)
 
@@ -113,15 +101,10 @@ $(document).ready(function () {
 
             }
           },
-          // if any error found 
-          error: function () {
-            console.log("error");
-          }
+         
 
         });
-      } else {
-        // any condition??
-      }
+      } 
 
     } else {
       function buildQueryURL() {
@@ -150,7 +133,7 @@ $(document).ready(function () {
         return queryURL + $.param(queryParams);
       }
       var queryURL = buildQueryURL()
-      console.log(queryURL)
+     
 
 
       // if the search value is not empty then pass the url to get the data
@@ -161,13 +144,6 @@ $(document).ready(function () {
           url: queryURL,
           method: "GET",
           dataType: "json",
-
-          beforsend: function () {
-            //any condition to be checked before sending
-          },
-          complete: function () {
-            // any condition to checked after this completed
-          },
 
           //when it is successfull 
           success: function (news) {
@@ -180,7 +156,6 @@ $(document).ready(function () {
               //append the output with the result
               output += `
                 
-
               <div class="w3-card-4" style="width 270%;">
               <header class="w3-container  w3-blue">
                 <h4>Title : ${latestNews[i].abstract}</h4>
@@ -197,13 +172,12 @@ $(document).ready(function () {
                 <footer class="w3-container w3-grey" style ="height:10px">
                 </footer>
                 </div>
-                
-                                                              
+                                                             
                 `;
 
             }
             //if the output is not empty
-            if (output !== "") {
+            if (output) {
               // append the  article section (id) in html with the result         
               $("#article-section").append(output)
 
@@ -213,17 +187,10 @@ $(document).ready(function () {
 
             }
           },
-          // if any error found 
-          error: function () {
-            console.log("error");
-          }
-
+         
         });
-      } else {
-        // any condition??
       }
     }
-
 
   });
 
