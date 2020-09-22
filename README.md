@@ -19,7 +19,7 @@ Newsle is a website platform where users can search for news topics that they ar
 Search bar allows users to input their interested topics along with preferred year and interested source, which then lists the first ten topics of search.
 Trending page also allows users to visually access and read the headlines of top hourly trending news.
 
-## project execution
+## Project execution
 
 * when user opens up the page and enter a search topic search function fires up which is responsible for fetching the search and lists up the results page.
 * News results can be chosen based on the year and prefered news source, which is triggered by the "if" function.
