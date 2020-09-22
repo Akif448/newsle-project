@@ -81,12 +81,12 @@ $(document).ready(function () {
               output += `
 
 
-              <div class="w3-card-4 " style="width:270%;">
-              <header class="w3-container w3-blue">
+              <div class="w3-card-4" style="width 270%;">
+              <header class="w3-container  w3-blue">
               <h4>Title : ${latestNews[i].webTitle}</h4>
               </header>
 
-              <div class="w3-container">
+              <div class="w3-container ">
               <p>News Type: ${latestNews[i].type}</p>
               <p>Section: ${latestNews[i].sectionName}</p>
               <p><strong>URL: </strong> <a href="${latestNews[i].webUrl}"target="_blank">${latestNews[i].webUrl}</a></p>
@@ -181,12 +181,12 @@ $(document).ready(function () {
               output += `
                 
 
-                <div class="w3-card-4 resultsdiv" style="width:270%;">
-                <header class="w3-container w3-blue">
+              <div class="w3-card-4" style="width 270%;">
+              <header class="w3-container  w3-blue">
                 <h4>Title : ${latestNews[i].abstract}</h4>
                 </header>
   
-                <div class="w3-container resultscards">
+                <div class="w3-container">
                 <p>News Type: ${latestNews[i].document_type}</p>
                 <p>Section: ${latestNews[i].section_name}</p>
                 <p><strong>URL: </strong> <a href="${latestNews[i].web_url}""target="_blank">${latestNews[i].web_url}</a></p>

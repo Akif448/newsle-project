@@ -221,7 +221,7 @@ a.pure-button-primary {
     .l-box-lrg {
         border: none;
     }
-
+   
     #newsSource {
         font-size: xx-large;
         font-weight: bold;
@@ -242,12 +242,22 @@ a.pure-button-primary {
     a:active {
     color: #0077ff8e;
     }
+
+    .w3-card-4 {
+        width:270%
+        
+    }
 }
    
 @media (min-width: 78em) {
  
     .splash-head {
         font-size: 300%;
+    }
+
+    .w3-card-4 {
+        width:270%
+        
     }
 }
 
@@ -257,16 +267,16 @@ a.pure-button-primary {
         width: 75%;
     }
 
-    .resultsdiv {
-        width: 25%;
-        height: 25%;
-    }
-
+      
     .resultscards {
         width: 50%;
         height: 50%;
     }
+    .w3-card-4 {
+        width:80%;
+        margin: auto;
 
+    }
     #newsSource {
         font-size: xx-large;
         font-weight: bold;
