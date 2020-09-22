@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 
       // if the search value is not empty then pass the url to get the data
-      if (queryURL !== "") {
+      if (queryURL) {
 
         $.ajax({
 

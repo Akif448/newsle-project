@@ -191,9 +191,17 @@ a.pure-button-primary {
 .toplink {
     text-align: center;
 }
+
  footer {
      text-align: center;
  }
+
+div#borderTrending {
+    color: #1f8dd6;
+    border: 2px solid #1f8dd6;
+    border-radius: 20px;
+    background: rgba(215, 208, 208, 0.6);
+}
 
 
 @media (min-width: 48em) {
