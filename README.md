@@ -22,7 +22,7 @@ Trending page also allows users to visually access and read the headlines of top
 ## Project execution
 
 * when user opens up the page and enter a search topic search function fires up which is responsible for fetching the search and lists up the results page.
-* News results can be chosen based on the year and prefered news source, which is triggered by the "if" function.
+* News results can be chosen based on the year and prefered news source, which is triggered by the "ternary operator".
 * Ajax call is made to the related APis in  the search query, and if the call is success the information will be returned by news function.
 
 ## Project outlook
