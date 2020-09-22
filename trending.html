@@ -56,7 +56,7 @@
                 var storyURL = response.results[i].url;
 
                 // variable $storyHTML will store the HTML to be placed in the appropriate div on the webpage based on information retrieved from the selected Trending Article.
-                var $storyHTML = ('<a target="_blank" href=' + storyURL + '><div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="pure-u-img imgt" src=' + storyPictureURL + '></div></div><br></a>');
+                var $storyHTML = ('<a target="_blank" href=' + storyURL + '><div id="borderTrending"><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="pure-u-img imgt" src=' + storyPictureURL + '></div></div><br></a>');
 
                 // function implemented to append the HTML stored in $storyHTML to the webpage
                 function addTrendingStory() {
