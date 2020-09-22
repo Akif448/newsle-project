@@ -26,7 +26,6 @@
 
     <div class="pure-g">
         <div class="l-box-lrg pure-u-1-2 pure-u-md-2-5 trendingart" id="article-section">
-            <!--place retrieved articles in here-->
 
         </div>
     </div>
@@ -34,28 +33,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
+        // Implementation of AJAX GET method to retrieve Top Stories from NYTimes API
         $.ajax({
             url: "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=vLMHBGsKFQFda3lJ74OVq3S1X79VNu4T",
             method: "GET"
         }).then(function (response) {
-            // console.log(response);
-            // console.log(response.results);
-            // console.log(response.results[0]);
-            // console.log(response.results[0].title);
-            // console.log(response.results[0].abstract);
-            // console.log(response.results[0].multimedia[0].url);
-            for (let i = 0; i <= 8; i++) {
-                console.log(i);
+            // 'for' loop implemented to regulate the number of Trending Artciles displayed to 10
+            for (let i = 0; i <= 9; i++) {
+                // variable featuredStory will hold the Trending Article selected in each iteration of the 'for' loop
                 var featuredStory = response.results[i];
-                console.log(featuredStory);
+
+                // variable storyTitle will hold the title of the selected Trending Article
                 var storyTitle = response.results[i].title;
-                console.log(storyTitle);
+
+                // variable storyAbstract will hold the abstract of the selected Trending Article
                 var storyAbstract = response.results[i].abstract;
-                console.log(storyAbstract);
-                var storyPictureURL = response.results[i].multimedia[0].url
-                console.log(storyPictureURL);
-                var $storyHTML = ('<div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="pure-u-img imgt" src=' + storyPictureURL + '></div></div><br>');
-                console.log($storyHTML);
+
+                // variable storyPictiureURL will hold the URL of the First image used in the Trending Article
+                var storyPictureURL = response.results[i].multimedia[0].url;
+
+                // variable storyURL will hold the original URL of the article
+                var storyURL = response.results[i].url;
+
+                // variable $storyHTML will store the HTML to be placed in the appropriate div on the webpage based on information retrieved from the selected Trending Article.
+                var $storyHTML = ('<a target="_blank" href=' + storyURL + '><div><div>' + storyTitle + '</div><div>' + storyAbstract + '</div><div><img class="pure-u-img imgt" src=' + storyPictureURL + '></div></div><br></a>');
+
+                // function implemented to append the HTML stored in $storyHTML to the webpage
                 function addTrendingStory() {
                     $('#article-section').append($storyHTML);
                 };
