@@ -206,7 +206,7 @@ div#borderTrending {
         border: none;
     }
    
-    #newsSource {
+    #newsLogo {
         font-size: xx-large;
         font-weight: bold;
         text-align: center;
@@ -214,7 +214,8 @@ div#borderTrending {
     }
     
     .w3-card-4 {
-        width:270%
+        width:270%;
+        margin: auto;
         
     }
 }
@@ -226,7 +227,8 @@ div#borderTrending {
     }
 
     .w3-card-4 {
-        width:270%
+        width:270%;
+        margin: auto;
         
     }
 }
@@ -237,17 +239,13 @@ div#borderTrending {
         width: 75%;
     }
 
-      
-    .resultscards {
-        width: 50%;
-        height: 50%;
-    }
+   
     .w3-card-4 {
         width:80%;
         margin: auto;
 
     }
-    #newsSource {
+    #newsLogo {
         font-size: xx-large;
         font-weight: bold;
         text-align: center;
