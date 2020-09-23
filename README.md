@@ -36,7 +36,7 @@ Trending page also allows users to visually access and read the headlines of top
 ![New York Times articles loading page](https://github.com/Akif448/newsle-project/blob/master/assets/the_newyorktimes_results.PNG)
 
 * ### Trending Page
-![Trending page](https://github.com/Akif448/newsle-project/blob/master/assets/trending_new.PNG)
+![Trending page](https://github.com/Akif448/newsle-project/blob/master/assets/trending.PNG)
 
 ## News Sources
 
